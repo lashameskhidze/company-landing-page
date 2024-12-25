@@ -1304,3 +1304,741 @@ header .navbar-nav{
         width: 320px;
     }
 }
+
+
+.witeli{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: var(--redfont-color);
+    border-radius: 8px;
+    height: 450px;
+    margin-bottom: 200px;
+}
+.witeli .left{
+    width: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.witeli .right{
+    width: 100%;
+}
+.witeli .left .mainText{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    font-family: Hind Siliguri;
+    color: var(--white-color);
+}
+.witeli .left button{
+    width: 170px;
+    height: 50px;
+    background-color: #FBD34B;
+    color: var(--blackfont-color);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    border: 0px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.witeli .right p{
+    width: 468px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--white-color);
+    font-family: Work Sans;
+    margin-top: 90px;
+}
+.witeli img{
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 32%;
+}
+@media screen and (max-width: 1200px){
+    .witeli{
+        flex-direction: column;
+        height: 900px;
+        background-color: var(--redfont-color);
+    }
+    .witeli .left{
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .witeli .right{
+        display: flex;
+        justify-content: center;
+        margin-left: -20px;
+    }
+    .witeli .right p{
+        width: 215px;
+    }
+    .witeli img{
+        margin-top: 780px;
+        margin-left: 26%;
+    }
+}
+@media screen and (max-width: 645px){
+    .witeli img{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 485px){
+    .witeli img{
+        width: 200px;
+        margin-top: 750px;
+    }
+    .witeli{
+        height: 830px;
+    }
+}
+.newletter{
+    display: flex;
+    margin-bottom: 200px;
+}
+.newletter .left{
+    width: 100%;
+    margin-left: 190px;
+}
+.newletter form{
+    width: 100%;
+}
+.newletter .right{
+    width: 90%;
+    margin-left: 50px;
+    display: flex;
+}
+.newletter .left p{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--blackfont-color);
+    font-family: Hind Siliguri;
+}
+.newletter .right .rafac{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--blackfont-color);
+    font-family: Hind Siliguri;
+    display: none;
+}
+.newletter .right input{
+    width: 286px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #DADADA;
+    outline: none;
+    padding-left: 20px;
+}
+.newletter .right button{
+    width: 155px;
+    height: 50px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: var(--redfont-color);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Work Sans;
+    line-height: 26px;
+    color: var(--white-color);
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+@media screen and (max-width: 1400px){
+    .newletter{
+        flex-direction: column;
+    }
+    .newletter .left{
+        display: none;
+    }
+    .rafac{
+        display: block !important;
+        margin-bottom: 20px;
+    }
+    .NForRes{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .newletter .right{
+        justify-content: center;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .newletter .right button{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 485px){
+    .rafac{
+        width: 190px;
+    }
+}
+
+
+
+
+.insights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.insights .zeda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.insights .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.insights .zeda .articles{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.insights .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 64px;
+    margin-bottom: 25px;
+}
+.insights .smalltext{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--blackfontOPACITY-color);
+    font-family: Work Sans;
+    margin: 0;
+    text-align: center;
+    width: 770px;
+}
+.insights .smalltext2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--blackfontOPACITY-color);
+    font-family: Work Sans;
+    margin: 0;
+}
+.lastlargediv{
+    display: flex;
+    justify-content: center;
+}
+.lastlargediv .large{
+    width: 1150px;
+    height: 370px;
+    border: 1px solid #E6EDF5;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 100px;
+}
+.lastlargediv .large .left{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.lastlargediv .large .right{
+    width: 100%;
+    margin-top: 50px;
+}
+.lastlargediv .large .left .img{
+    width: 80%;
+    height: 336px;
+    border-radius: 8px;
+    border-bottom-right-radius: 50px;
+    object-fit: contain;
+}
+.lastlargediv .large .right .main{
+    width: 450px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--blackfont-color);
+    font-family: Hind Siliguri;
+    margin: 0;
+}
+.lastlargediv .large .right .little{
+    width: 500px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--blackfont-color);
+    font-family: Work Sans;
+    margin: 0;
+    margin-top: 50px;
+}
+.Sboxes{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.Lboxes{
+    margin-top: 40px;
+}
+.Lboxes .erti{
+    width: 370px;
+    height: 385px;
+    border: 1px solid #E6EDF5;
+    border-radius: 8px;
+}
+.Lboxes .erti .zeda img{
+    margin: 0;
+    width: 90%;
+    height: 240px;
+    border-radius: 8px;
+    border-bottom-right-radius: 50px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    object-fit: contain;
+}
+.Lboxes .erti .qveda{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    margin: 20px;
+    margin-top: 20px;
+}
+.lastBtn{
+    width: 170px;
+    height: 50px;
+    border: 1px solid var(--redfont-color);
+    border-radius: 8px;
+    color: var(--redfont-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-family: Hind Siliguri;
+    background-color: var(--white-color);
+    margin: 0;
+}
+@media screen and (max-width: 1200px){
+    .lastlargediv .large{
+        width: 330px;
+        height: 620px;
+        flex-direction: column;
+    }
+    .lastlargediv .large .left .img{
+        height: 180px;
+    }
+    .lastlargediv .large .right .main{
+        width: 300px;
+    }
+    .lastlargediv .large .right .little{
+        width: 296px;
+    }
+    .lastlargediv .large .right{
+        margin-left: 10px;
+    }
+    .Sboxes{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 800px){
+    .insights .largeText{
+        font-size: 40px;
+
+    }
+    .insights .smalltext{
+        width: 330px;
+    }
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    margin-top: 70px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3F3836;
+}
+footer .zeda{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 100px;
+}
+footer .zeda .erti{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    font-family: Hind Siliguri;
+    color: var(--white-color);
+}
+footer .zeda .ori p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin: 0;
+}
+footer .zeda .ori ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    color: var(--white-color);
+    margin-top: 35px;
+}
+footer .zeda .ori ul a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    color: var(--white-color);
+    margin-top: 35px;
+}
+footer .zeda .sami p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin: 0;
+}
+footer .zeda .sami ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    color: var(--white-color);
+    margin-top: 35px;
+}
+footer .zeda .sami ul a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    color: var(--white-color);
+    margin-top: 35px;
+}
+footer .zeda .otxi p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin: 0;
+}
+footer .zeda .otxi .links a{
+    text-decoration: none;
+    color: var(--redfont-color);
+
+}
+footer .zeda .otxi .links{
+    margin-top: 25px;
+}
+footer .zeda .otxi .links a i{
+    font-size: 48px;
+    margin-left: 20px;
+}
+footer .zeda .otxi .links a .fa-facebook{
+    margin-left: 0px;
+
+}
+footer .divline{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+footer .line{
+    margin: 0 !important;
+    width: 85%;
+    height: 1px;
+    background-color: #494949;
+}
+footer .qveda{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+footer .qveda .left{
+    width: 100%;
+    margin-left: 140px;
+}
+footer .qveda .right{
+    display: flex;
+    width: 100%;
+    gap: 150px;
+    margin-left: 40%;
+}
+footer .qveda .left p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    color: var(--white-color);
+    opacity: 50%;
+}
+footer .qveda .right p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    color: var(--white-color);
+    opacity: 50%;
+}
+@media screen and (max-width: 1500px){
+    footer .qveda .right{
+        margin-left: 10%;
+        gap: 150px;
+    }
+    footer .qveda .left{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1000px){
+    footer .zeda{
+        flex-direction: column;
+    }
+    footer{
+        padding-left: 50px;
+    }
+    footer .zeda .erti{
+        margin-bottom: 30px;
+    }
+    footer .zeda .sami{
+        margin-top: 70px;
+    }
+    footer .zeda .otxi{
+        margin-top: 70px;
+    }
+    footer .qveda{
+        flex-direction: column;
+    }
+    footer .qveda .left p{
+        width: 206px;
+        text-align: center;
+    }
+    footer .qveda .left{
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    footer .qveda .right{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 0px;
+        gap: 50px;
+    }
+}
+.up{
+    position: fixed;
+    z-index: 9999;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: var(--redfont-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 60px;
+    top: 80vh;
+}
+.up i{
+    font-size: 50px;
+    color: var(--white-color);
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+.close-btn:hover {
+    font-size: 40px;
+    top: 0;
+}
+.modalMainText{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    text-align: center;
+}
+.modalEmail{
+    display: flex;
+    align-items: center;
+}
+.modalEmail p{
+    margin: 0;
+}
+.modalEmail .fa-envelope{
+    font-size: 30px;
+    color: var(--redfont-color);
+    margin-right: 10px;
+}
+.modalEmail .main{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-right: 5px;
+}
+.modalPhone{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.modalPhone p{
+    margin: 0;
+}
+.modalPhone .fa-phone{
+    font-size: 25px;
+    color: var(--redfont-color);
+    margin-right: 10px;
+    margin-left: 3px;
+}
+.modalPhone .main{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-right: 5px;
+}
+.modalPhone a{
+    text-decoration: none;
+    color: #212529;
+}
+.modalAddress{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.modalAddress p{
+    margin: 0;
+}
+.modalAddress .fa-location-dot{
+    font-size: 25px;
+    color: var(--redfont-color);
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.modalAddress .main{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-right: 5px;
+}
+.map iframe{
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 621px){
+    .modal-content{
+        width: 350px;
+        height: 500px;
+    }
+    .map iframe{
+        width: 100%;
+        height: 250px;
+    }
+    .modalAddress p{
+        font-size: 16px;
+    }
+    .close-btn{
+        right: 10px;
+    }
+}
+.slider {
+    width: 90%;
+    height: 150px; 
+    overflow: hidden; 
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.slider-track {
+    display: flex;
+    gap: 300px;
+    animation: scroll 10s linear infinite;
+}
+
+.slider img {
+    height: 100%; 
+    width: auto; 
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@media screen and (max-width: 485px){
+    .up{
+        width: 70px;
+        height: 70px;
+        right: 30px;
+    }
+    .up i{
+        font-size: 35px;
+    }
+}
