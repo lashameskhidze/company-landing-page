@@ -1,0 +1,1306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --redfont-color:#F07566;
+    --white-color:#FFFFFF;
+    --blackfont-color: #333333;
+    --blackfontOPACITY-color:#3333337F;
+    --green-color:#4DB282;
+}
+.darkmode{
+    --redfont-color:#F07566;
+    --white-color:#333333;
+    --blackfont-color: #FFFFFF;
+    --blackfontOPACITY-color:#FFFFFF7E;
+    --green-color:#4DB282;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+}
+.bg-body-tertiary{
+    background-color: var(--white-color) !important;
+    margin-left: 30px;
+    width: 100%;
+}
+header{
+    display: flex;
+    margin-top: 20px;
+}
+header a{
+    color: var(--blackfont-color) !important;
+}
+header #contact{
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    right: 200px;
+    border: 1px solid #F075663C;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+header #contact a{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--redfont-color) !important;
+    font-family: Hind Siliguri;
+}
+header .navbar-brand{
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Hind Siliguri;
+    margin-left: 150px;
+}
+header .nav-link{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Work Sans;
+}
+header .navbar-nav{
+    margin-left: 30px;
+    gap: 25px;
+    z-index: 99;
+}
+.first{
+    display: flex;
+    flex: 2;
+    width: 100%;
+    margin-bottom: 400px;
+}
+.first .left{
+    width: 100%;
+    margin-top: 170px;
+    margin-left: 100px;
+}
+.first .right{
+    width: 100%;
+}
+.first .bg{
+    position: absolute;
+    right: 0px;
+    margin-top: -100px;
+    z-index: 0;
+}
+.first .left .zeda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.first .left .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.first .left .zeda .company{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.first .left .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 72px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 80px;
+}
+.first .left .greenText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 72px;
+    font-family: Hind Siliguri;
+    color: var(--green-color);
+    line-height: 80px;
+
+}
+.first .left .line{
+    margin-bottom: 30px;
+    width: 350px;
+}
+.first .left .smalltext{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--blackfont-color);
+    font-family: Work Sans;
+    margin-bottom: 40px;
+}
+.first .left button{
+    width: 154px;
+    height: 50px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: var(--redfont-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Hind Siliguri;
+}
+.first .left button a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.first .right .mainImg{
+    position: absolute;
+    right: 200px;
+    margin-top: 50px;
+}
+.ForRes{
+    width: 470px;
+}
+@media screen and (max-width: 1300px){
+    .first .right .mainImg {
+        right: 50px;
+
+    }
+    .first .left{
+        margin-left: 50px;
+    }
+    header .navbar-brand{
+        margin-left: 70px;
+    }
+    .first{
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .first{
+        flex-direction: column-reverse;
+    }
+    .first .left{
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        margin-left: -50px;
+        margin-top: 0px;
+    }
+    .first .right{
+        display: flex;
+        justify-content: center;
+    }
+    .first .right .mainImg{
+        position: relative;
+
+    }
+    .first .bg{
+        margin-bottom: 380px !important;
+    }
+    header #contact {
+        right: 100px;
+    }
+    .navbar>.container-fluid{
+        justify-content: end;
+        z-index: 1;
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width: 991px){
+    header #contact{
+        position:static;
+        
+    }
+    header .navbar-nav{
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+        margin-top: 50px;
+    }
+    .first .left{
+        width: auto;
+    }
+}
+@media screen and (max-width: 640px){
+    .first .right .mainImg{
+        width: 500px;
+    }
+    .ForRes{
+        width: 350px;
+    }
+    header .navbar-brand{
+        z-index: 1  ;
+    }
+    .first .right .mainImg{
+        margin-left: 50px;
+
+    }
+    header .navbar-nav{
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width: 485px) {
+    .first .right .mainImg{
+        width: 350px;
+    }
+    .first .left{
+        margin-left: 20px;
+    }
+    .navbar>.container-fluid{
+        margin-right: 50px;
+    }
+    header .navbar-nav{
+        margin-left: -100px;
+        margin-bottom: 350px;
+    }
+}
+.second{
+    display: flex;
+    flex: 2;
+    width: 100%;
+}
+.second .left{
+    width: 100%;
+}
+.second .right{
+    width: 100%;
+    margin-left: 300px;
+}
+.second .right .zeda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.second .right .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.second .right .zeda .about{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.second .right .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 64px;
+    margin-bottom: 20px;
+}
+.second .right .smalltext{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    margin-bottom: 40px;
+}
+.second .right .chekboxes p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Work Sans;
+    color: var(--blackfont-color);
+    margin-left: 10px;
+}
+.second .right .shape1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.second .right .shape2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.second .right .shape3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+.second .right button{
+    width: 170px;
+    height: 50px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: var(--redfont-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Hind Siliguri;
+}
+.second .right button a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.second .left img{
+    margin-left: 60px;
+}
+
+
+@media screen and (max-width: 1500px){
+    .second .right{
+        margin-left: 100px;
+    }
+    .second .left img{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .second{
+        flex-direction: column;
+    }
+    .second .right{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .second .left{
+        display: flex;
+        justify-content: center;
+    }
+    .second .left img{
+        width: 600px;
+    }
+    .AForRes{
+        margin-left: -150px;
+    }
+}
+@media screen and (max-width: 640px){
+    .second .left img{
+        width: 460px;
+        margin-left: 0px;
+    }
+    .AForRes{
+        margin-left: -50px;
+    }
+}
+@media screen and (max-width: 485px) {
+    .AForRes{
+        margin-left: -50px;
+    }
+    .second .left img{
+        width: 350px;
+    }
+    .AForRes{
+        width: 250px;
+    }
+    .second .right .largeText{
+        font-size: 40px;
+    }
+
+}
+.third{
+    margin-top: 80px;
+}
+.third .bg{
+    margin-left: -70px;
+    position: absolute;
+}
+.third .all{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 150px;
+}
+.third .all .pirveli{
+    width: 270px;
+    height: 370px;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+    background-color: var(--white-color);
+}
+.third .all .meore{
+    width: 270px;
+    height: 370px;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+    background-color: var(--white-color);
+}
+.third .all .mesame{
+    width: 270px;
+    height: 370px;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+    background-color: var(--white-color);
+}
+.third .all .meotxe{
+    width: 270px;
+    height: 370px;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+    background-color: var(--white-color);
+}
+.third .all .pirveli .large{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+}
+.third .all .pirveli .small{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Work Sans;
+    color: var(--blackfontOPACITY-color);
+}
+.third .all .meore .large{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+}
+.third .all .meore .small{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Work Sans;
+    color: var(--blackfontOPACITY-color);
+}
+.third .all .mesame .large{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+}
+.third .all .mesame .small{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Work Sans;
+    color: var(--blackfontOPACITY-color);
+}
+.third .all .meotxe .large{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+}
+.third .all .meotxe .small{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Work Sans;
+    color: var(--blackfontOPACITY-color);
+}
+.all img{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.all .large{
+    margin-top: 90px;
+    margin-left: 30px;
+}
+.all .small{
+    margin-left: 30px;
+}
+@media screen and (max-width: 1200px){
+    .third .all{
+        width: 80%;
+        display: grid !important;
+        grid-template-columns: 0.5fr 0.5fr;
+        position: relative;
+        justify-self: center;
+    }
+    .third .all .pirveli{
+        margin: auto;
+    }
+    .third .all .meore{
+        margin: auto;
+    }
+    .third .all .mesame{
+        margin: auto;
+    }
+    .third .all .meotxe{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 640px){
+    .third .all{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 470px){
+    .third .bg{
+        width: 300px;
+    }
+}
+.fourth{
+    margin-top: 900px;
+    display: flex;
+}
+.fourth .left{
+    width: 100%;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+.fourth .right{
+    width: 100%;
+}
+.fourth .left .zeda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.fourth .left .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.fourth .left .zeda .Features{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.fourth .left .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 64px;
+}
+.fourth .left .smalltext{
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--blackfont-color);
+    font-family: Work Sans;
+    margin-bottom: 40px;
+}
+.fourth .conteiner{
+    width: 470px;
+    height: 145px;
+    box-shadow: 0px 48px 48px #00115614;
+}
+.fourth .conteiner .top p{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Hind Siliguri;
+    color:var(--blackfont-color);
+    padding-top: 3px;
+    margin-left: 10px;
+}
+.fourth .conteiner .top{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.fourth .conteiner .small{
+    width: 400px;
+    padding-left: 25px;
+    padding-top: 15px;
+    color: #3333337F;
+}
+.fourth .left .FForRes{
+    width: 470px;
+}
+@media screen and (max-width: 1500px){
+    .fourth .left{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .fourth {
+        margin-top: 150px;
+        flex-direction: column;
+    }
+    .fourth .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .fourth .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .fourth .left .largeText{
+        font-size: 40px;
+    }
+    .fourth .left .FForRes{
+        width: 330px;
+    }
+    .fourth .right img{
+        width: 400px;
+    }
+    .fourth .conteiner{
+        width: 330px;
+    }
+    .fourth .conteiner .small{
+        width: 266px;
+    }
+}
+@media screen and (max-width: 485px) {
+    .fourth .right img{
+        width: 350px;
+    }
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio .zeda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.portfolio .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.portfolio  .zeda .port{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+.portfolio  .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 64px;
+    margin-bottom: 30px;
+}
+.portfolio .smalltext{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--blackfontOPACITY-color);
+    font-family: Work Sans;
+    text-align: center;
+    width: 770px;
+}
+.portfolio .boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 100px;
+}
+.boxes .pirveli{
+    margin-bottom: 10px;
+}
+.boxes  .photo{
+    border-radius: 8px;
+    width: 570px;
+    height: 385px;
+    background-color: #D8D8D8;
+}
+.boxes .photo img{
+    width: 570px;
+    height: 385px;
+    object-fit: contain;
+}
+.boxes .num{
+    width: 96px;
+    height: 96px;
+    background-color: var(--green-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -96px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 8px;
+}
+.boxes .num p{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--white-color);
+    font-family: Hind Siliguri;
+}
+.boxes .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxes .text .mainText{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    margin-top: 20px;
+}
+.boxes .text .smallText{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Work Sans;
+    color: var(--blackfontOPACITY-color);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.portfolioBtn{
+    width: 170px;
+    height: 50px;
+    background-color: var(--white-color);
+    color: var(--redfont-color);
+    border: 1px solid var(--redfont-color);
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-family: Hind Siliguri;
+    margin-top: 50px;
+}
+@media screen and (max-width: 1200px){
+.portfolio .boxes{
+    grid-template-columns: 1fr;
+}
+}
+@media screen and (max-width: 800px){
+    .portfolio .smalltext{
+        width: 330px;
+    }
+    .boxes .pirveli{
+        width: 330px;
+        height: 270px;
+    }
+    .boxes .photo img{
+        width: 330px;
+        height: 222px;
+    }
+    .boxes .photo{
+        width: 330px;
+        height: 222px;
+    }
+}
+@media screen and (max-width: 485px){
+    .portfolio .largeText{
+        font-size: 40px;
+    }
+}
+.ads{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 100px;
+    display: none;
+}
+@media screen and (max-width: 1200px){
+    .slider{
+        display: none;
+    }
+    .ads{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+    .ads img{
+        position: relative;
+        justify-self: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .ads{
+        grid-template-columns: 1fr 1fr;
+    }
+    .ads img{
+        width: 125px;
+    }
+}
+.service{
+    display: flex;
+    flex: 2;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+.service .left{
+    width: 100%;
+    margin-top: 160px;
+    margin-left: 100px;
+}
+.service .right{
+    width: 100%;
+}
+.service .left .zeda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.service .left .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.service .left .zeda .Service{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.service .left .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 64px;
+}
+.service .left .smalltext{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--blackfont-color);
+    font-family: Work Sans;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 470px;
+}
+.service .left .imgs{
+    display: flex;
+    gap: 100px;
+}
+.service .right .mainImg{
+    position: absolute;
+    right: 200px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 1500px){
+    .service .right .mainImg{
+        right: 0px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .service{
+        flex-direction: column;
+    }
+    .service .left{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service .right{
+        display: flex;
+        justify-content: center;
+    }
+    .service .right .mainImg{
+        position: relative;
+    }
+}
+@media screen and (max-width: 645px){
+    .service .right .mainImg{
+        width: 460px;
+    }
+    .service .left .largeText{
+        font-size: 40px;
+    }
+    .service .left .smalltext{
+        width: 330px;
+    }
+}
+@media screen and (max-width: 485px) {
+    .service .right .mainImg{
+        width: 350px;
+    }
+    .service .left .imgs{
+        gap: 50px;
+    }
+    .service{
+        margin-top: 0px;
+    }
+}
+
+
+.underService{
+    display: flex;
+    width: 100%;
+    height: 385px;
+    background-color: var(--redfont-color);
+    margin-bottom: 300px;
+}
+.underService .left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.underService .right{
+    width: 100%;
+}
+.underService .left img{
+    position: absolute;
+}
+.underService .right .text{
+    width: 550px;
+}
+.underService .right .largeText{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    font-family: Hind Siliguri;
+    color: var(--white-color);
+    margin: 0;
+    margin-top: 60px;
+}
+.underService .right .smalltext{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    color: var(--white-color);
+    margin: 0;
+    margin-top: 40px;
+}
+@media screen and (max-width: 1200px){
+    .underService{
+        flex-direction: column;
+        height: 800px;
+    }
+    .underService .left{
+        height: 100%;
+    }
+    .underService .right .largeText{
+        font-size: 40px;
+        width: 280px;
+    }
+    .underService .right .smalltext{
+        width: 330px;
+    }
+    .underService .right .text{
+        width: 330px;
+    }
+    .underService .right{
+        display: flex;
+        justify-content: center;
+    }
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+}
+.team .zeda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.team .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.team .zeda .teamText{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.team .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 64px;
+    margin-bottom: 25px;
+}
+.team .smalltext{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--blackfontOPACITY-color);
+    font-family: Work Sans;
+    margin: 0;
+    text-align: center;
+    width: 770px;
+}
+.team .smalltext2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--blackfontOPACITY-color);
+    font-family: Work Sans;
+    margin: 0;
+}
+
+.swiper {
+    width: 60%;
+    height: 530px;
+    margin-top: 100px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    width: 370px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E6EDF5;
+    border-radius: 8px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    background-color: #FFE4E1;
+    opacity: 100;
+}
+.swiper-pagination-bullet-active{
+    width: 16px;
+    height: 16px;
+    background-color: var(--redfont-color);
+}
+.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+.swiper-slide .text .large{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    margin: 0;
+
+}
+.swiper-slide .text .little{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Work Sans;
+    color: var(--blackfontOPACITY-color);
+    margin: 0;
+}
+.swiper-slide .img{
+    width: 90%;
+    height: 320px;
+    background-color: #E7F3ED;
+    border-radius: 8px;
+    border-bottom-right-radius: 50px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.swiper-slide .text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 767px){
+    .team .largeText{
+        font-size: 40px;
+    }
+    .team .smalltext{
+        width: 330px;
+    }
+}
+.Testimonials{
+    display: flex;
+    margin-bottom: 300px;
+}
+.Testimonials .left{
+    width: 100%;
+    margin-left: 100px;
+}
+.Testimonials .right{
+    width: 100%;
+    margin-top: 20px;
+}
+.Testimonials .zeda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.Testimonials .oval{
+    width: 12px;
+    height: 12px;
+    background-color: var(--redfont-color);
+    border-radius: 50px;
+}
+.Testimonials .zeda .TestimonialsText{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Hind Siliguri;
+    color: var(--redfont-color);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.Testimonials .largeText{
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    line-height: 64px;
+    margin-bottom: 25px;
+}
+.Testimonials .conteiner{
+    width: 470px;
+    height: 225px;
+    box-shadow: 0px 24px 48px #00115614;
+}
+.Testimonials .conteiner .top img{
+    margin-top: -50px;
+    margin-left: 80%;
+}
+.Testimonials .conteiner .top{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.Testimonials .conteiner .small{
+    width: 400px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Work Sans;
+    margin: auto;
+    color: var(--blackfontOPACITY-color);
+    margin-top: 20px;
+}
+.Testimonials .conteiner .names{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    margin-top: -110px;
+}
+.Testimonials .conteiner .autor{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: Hind Siliguri;
+    color: var(--blackfont-color);
+    margin-left: 35px;
+    margin-top: 15px;
+}
+.Testimonials .conteiner .company{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Work Sans;
+    opacity: 49%;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.Testimonials .btns{
+    display: flex;
+    gap: 10px;
+}
+.Testimonials .btns button{
+    border: 0px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.Testimonials .btns button i{
+    font-size: 48px;
+    color: var(--redfont-color);
+}
+@media screen and (max-width: 1500px){
+    .Testimonials .left{
+        margin-left: 0px;
+    }
+    .Testimonials .right{
+        margin-left: 100px;
+    }
+    
+}
+@media screen and (max-width: 1200px){
+    .Testimonials{
+        flex-direction: column;
+        margin-bottom:100px;
+    }
+    .Testimonials .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .Testimonials .left{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 645px){
+    .Testimonials .largeText{
+        font-size: 40px;
+    }
+    .Testimonials .left img{
+        width: 460px;
+        margin-left: -50px;
+        margin-bottom: 20px;
+    }
+    .Testimonials .btns{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 485px){
+    .Testimonials .left img{
+        width: 330px;
+        margin-left: 0px;
+    }
+    .Testimonials .conteiner{
+        width: 330px;
+        height: 240px;
+    }
+    .Testimonials .conteiner .small{
+        margin-left: 10px;
+        width: 320px;
+    }
+}
